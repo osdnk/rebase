@@ -68,7 +68,6 @@ git fetch origin $BASE_BRANCH
 git fetch fork $HEAD_BRANCH
 
 # do the rebase
-npm i -g yarn
 yarn 
 git add yarn.lock
 git commit -m "Update yarn.lock"
