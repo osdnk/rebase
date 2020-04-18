@@ -68,8 +68,10 @@ git fetch origin $BASE_BRANCH
 git fetch fork $HEAD_BRANCH
 
 # do the rebase
-git checkout -b $HEAD_BRANCH fork/$HEAD_BRANCH
-git rebase origin/$BASE_BRANCH
+npm i -g yarn
+yarn 
+git add yarn.lock
+git commit -m "Update yarn.lock"
 
 # push back
 git push --force-with-lease fork $HEAD_BRANCH
