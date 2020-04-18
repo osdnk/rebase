@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Automatically rebases PR on '/rebase' co
 LABEL "com.github.actions.icon"="git-pull-request"
 LABEL "com.github.actions.color"="purple"
 
-RUN apk --no-cache add jq bash curl git git-lfs nodejs nodejs-npm ruby ruby-dev make build-base
+RUN apk --no-cache add jq bash curl git git-lfs nodejs nodejs-npm ruby ruby-dev make build-base ruby-bigdecimal
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
