@@ -76,7 +76,9 @@ npm i -g yarn
 gem install cocoapods
 adduser -D -u 1000 another
 su another
-cd sample && cd ios && pod install && cd .. && cd ..
+cd sample && cd ios
+sudo su -c "pod install" another
+cd .. && cd ..
 git add sample/ios/Podfile.lock
 git commit -m "Update Podfile.lock"
 
