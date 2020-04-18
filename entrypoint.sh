@@ -78,7 +78,7 @@ adduser -D -u 1000 another
 cd ios
 su -c "pod install" another
 cd ..
-git add sample/ios/Podfile.lock
+git add ios/Podfile.lock
 git commit -m "Update Podfile.lock"
 
 # push back
