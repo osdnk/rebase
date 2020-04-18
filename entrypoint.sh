@@ -68,6 +68,7 @@ git fetch origin $BASE_BRANCH
 git fetch fork $HEAD_BRANCH
 
 # do the rebase
+git checkout -b $HEAD_BRANCH fork/$HEAD_BRANCH
 npm i -g yarn
 yarn 
 git add yarn.lock
