@@ -70,9 +70,9 @@ git fetch fork $HEAD_BRANCH
 # do the rebase
 git checkout -b $HEAD_BRANCH fork/$HEAD_BRANCH
 npm i -g yarn
-yarn 
-git add yarn.lock
-git commit -m "Update yarn.lock"
+# yarn 
+# git add yarn.lock
+# git commit -m "Update yarn.lock"
 gem install cocoapods
 cd sample && cd ios && pod install && cd .. && cd ..
 git add sample/ios/Podfile.lock
