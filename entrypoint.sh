@@ -70,7 +70,7 @@ git fetch fork $HEAD_BRANCH
 # do the rebase
 git checkout -b $HEAD_BRANCH fork/$HEAD_BRANCH
 npm i -g yarn@1.22.4
-# yarn 
+yarn 
 # git add yarn.lock
 # git commit -m "Update yarn.lock"
 gem install cocoapods
