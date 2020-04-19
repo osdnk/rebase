@@ -58,6 +58,7 @@ COMMITTER_TOKEN=${!USER_TOKEN:-$GITHUB_TOKEN}
 git remote set-url origin https://x-access-token:$COMMITTER_TOKEN@github.com/$GITHUB_REPOSITORY.git
 git config --global user.email "$USER_EMAIL"
 git config --global user.name "$USER_NAME"
+git config --global core.sharedRepository 0666
 
 git remote add fork https://x-access-token:$COMMITTER_TOKEN@github.com/$HEAD_REPO.git
 
@@ -70,7 +71,7 @@ git fetch fork $HEAD_BRANCH
 # do the rebase
 git checkout -b $HEAD_BRANCH fork/$HEAD_BRANCH
 npm i -g yarn@1.22.4
-yarn 
+yarn
 # git add yarn.lock
 # git commit -m "Update yarn.lock"
 gem install cocoapods
